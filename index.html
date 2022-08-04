@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Task 6</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="main-text">
+            Welcome to fake data generator [<span id="counter">0</span>]
+        </h1>
+        <div class="lang-buttons">
+            <div class="btn active" id="lang-by" onclick="changeCountryByClick()">
+                Belarus
+            </div>
+            <div class="btn" id="lang-sgp" onclick="changeCountrySgpClick()">
+                Singapoure
+            </div>
+            <div class="btn" id="lang-ru" onclick="changeCountryRuClick()">
+                Russia
+            </div>
+        </div>
+    </div>
+    <div class="errors-wrapper">
+        <label class="label" for="errors">Number of mistakes: <span id="number-err">0</span></label>
+        <input type="range" id="errors" min="0" max="10" step=".25" value="0" onchange="changeNubers()">
+        <input type="number" id="errors-num" min="0" max="1000" step=".25" value='0' onchange="changeNumbersNew()">
+        <label for="seed">Input seed number:</label>
+        <div class="rand-wrapper">
+            <input type="number" id="seed" min="1" value="1" onchange="updateCheck()"> 
+            <div class="rand-btn" onclick="getRandomSeed()">Random Seed</div>
+        </div>
+        <button class="get-btn" onclick="getMultipleData()" >Get Info</button>
+    </div>
+    <main>
+        
+    </main>
+    <div id="table-wrapper" onchange="updateInfo()">
+        <table id="table">
+            
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;1,8..144,100;1,8..144,200;1,8..144,300&display=swap');
+
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Serif', serif;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.main-text {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.lang-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    border: 2px black solid;
+    background-color: antiquewhite;
+    font-size: 25px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: lime;
+}
+
+.btn:active {
+    background-color: mediumturquoise;
+    opacity: .75;
+}
+
+.active {
+    background-color: lime;
+}
+
+#seed {
+    font-size: 20px;
+}
+
+.rand-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rand-btn {
+    margin-top: 5px;
+    padding-top: 4px;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    background-color: antiquewhite;
+    border: 2px solid black;
+}
+
+.rand-btn:hover {
+    cursor: pointer;
+    background-color: lime;
+}
+
+.rand-btn:active {
+    background-color: mediumturquoise;
+    opacity: .75;
+}
+
+.errors-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.label {
+    font-size: 20px;
+}
+
+#errors {
+    width: 300px;
+    cursor: pointer;
+}
+
+.get-btn {
+    font-family: 'Roboto Serif', serif;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    height: 50px;
+    width: 300px;
+    background-color: antiquewhite;
+}
+
+.get-btn:active {
+    background-color: mediumturquoise !important;
+    opacity: .75;
+}
+
+.get-btn:hover {
+    background-color: lime;
+}
+
+.fake-data {
+    font-family: 'Forum', cursive;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#table-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px
+}
